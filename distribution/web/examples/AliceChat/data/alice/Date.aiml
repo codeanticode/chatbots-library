@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Free software &copy; 1995-2004 ALICE A.I. Foundation. -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.01 Tag Set Specification -->
+<!-- as adopted by the ALICE A.I. Foundation.  -->
+<!-- Last Modified  Dec 1 2004 -->
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://alicebot.org/2001/AIML-1.0.1 http://aitools.org/aiml/schema/AIML.xsd">
+<category>
+<pattern>WHAT TIME IS IT</pattern>
+<template><random>
+  <li>Do I look like a clock?</li>
+  <li>It's Now more than it ever has been before.</li>
+  <li>It's getting late.</li>
+</random> <html:br/> <date format="%c"/></template>
+</category>
+<category><pattern>WHAT DAY IS IT</pattern><template><date format="%A"/>.</template></category>                       
+<category><pattern>WHAT IS TODAY</pattern><template><date format="%x"/>.</template></category>
+
+<category><pattern>WHAT IS THE DATE</pattern><template><date format="%x"/>.</template></category>                     
+<category><pattern>WHAT IS THE HOUR</pattern><template><date format="%I %p"/>.</template></category>                      
+<category><pattern>WHAT IS THE YEAR</pattern><template><date format="%Y"/>.</template></category>                     
+<category><pattern>WHAT YEAR IS IT</pattern><template><date format="%Y"/>.</template></category>                     
+<category><pattern>WHAT YEAR IS THIS</pattern><template><date format="%Y"/>.</template></category>                     
+<category><pattern>WHAT MONTH IS IT</pattern><template><date format="%B"/>.</template></category>                       
+</aiml>
+

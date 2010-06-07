@@ -6,18 +6,22 @@
 
 	
 <!-- #### (1) where are your processing libraries located? edit location. #### -->
-	<property name="processing" location="../../../../sketchbook/libraries"/>
+	<property name="processing" location="/home/andres/Devel/Processing/sketchbook/libraries"/>
 
 
 <!-- #### (2) where are the jar files located that are required for compiling 
 		your library such as e.g. core.jar ? edit location. #### -->
 
-	<property name="libraryClasspath"  location="../../../../../Eclipse/workspace/libs"/>	
+	<property name="libraryClasspath"  location="/home/andres/Devel/Eclipse/workspace/libs"/>	
 	<path id="library-classpath">
 		<fileset dir="${libraryClasspath}" >		
 <!-- #### (3) add the jar files that are required for compiling. edit name.
 		for more include files. duplicate <include name="" /> #### -->
 			<include name="core.jar"/>
+			<include name="Ice.jar"/>
+			<include name="rebecca-network.jar"/>
+			<include name="console.jar"/>
+			<include name="consoleCallBacks.jar"/>			
 		</fileset>
 	</path>		
 	
@@ -59,9 +63,9 @@
 	<property name="tested:dependencies"  value="" />
 	
 <!-- #### (14) where can the source code be found? edit value. #### -->
-	<property name="source:host"  value="google code" />
-	<property name="source:url"  value="http://code.google.com/p/yourProject" />
-	<property name="source:repository"  value="http://code.google.com/p/yourProject/source/browse/" />
+	<property name="source:host"  value="github" />
+	<property name="source:url"  value="http://wiki.github.com/codeanticode/chatbots-library/" />
+	<property name="source:repository"  value="http://github.com/codeanticode/chatbots-library" />
 
 
 
@@ -139,6 +143,10 @@
   	<copy todir="${dist}/examples">
   		<fileset dir="examples"/>
   	</copy>
+  	<copy file="${libraryClasspath}/Ice.jar" todir="${dist}/library" />
+  	<copy file="${libraryClasspath}/rebecca-network.jar" todir="${dist}/library" />
+  	<copy file="${libraryClasspath}/console.jar" todir="${dist}/library" />
+  	<copy file="${libraryClasspath}/consoleCallBacks.jar" todir="${dist}/library" />  	
   	<copy todir="${dist}/src">
   		<fileset dir="src"/>
   	</copy> 

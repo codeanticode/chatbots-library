@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://alicebot.org/2001/AIML-1.0.1 http://aitools.org/aiml/schema/AIML.xsd">
+<!-- Free software &copy; 1995-2004 ALICE A.I. Foundation. -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.01 Tag Set Specification -->
+<!-- as adopted by the ALICE A.I. Foundation.  -->
+<!-- Last Modified  Apr 06 2005 -->
+<category><pattern>What are trees *</pattern><template>Wood.</template></category>
+<category><pattern>What does a plant *</pattern><template>Water and sunlight.</template></category>
+<category><pattern>When does leap year *</pattern><template>Every four years.</template></category>
+<category><pattern>When does Christmas *</pattern><template>December 25th.</template></category>
+<category><pattern>What religion is the pope</pattern><template>Catholic.</template></category>
+<category><pattern>What color is dirt</pattern><template>Brown.</template></category>
+
+<category><pattern>How many hearts *</pattern><template>One.</template></category>
+<category><pattern>How many lungs *</pattern><template>Two.</template></category>
+</aiml>

@@ -2,10 +2,10 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Devel/Eclipse/workspace/libs/core.jar" sourcepath="/core"/>
-	<classpathentry kind="lib" path="C:/Devel/Eclipse/workspace/libs/console.jar"/>
-	<classpathentry kind="lib" path="C:/Devel/Eclipse/workspace/libs/consoleCallBacks.jar"/>
-	<classpathentry kind="lib" path="C:/Devel/Eclipse/workspace/libs/Ice.jar"/>
-	<classpathentry kind="lib" path="C:/Devel/Eclipse/workspace/libs/rebecca-network.jar"/>
+	<classpathentry kind="lib" path="/home/andres/Devel/Eclipse/workspace/libs/core.jar" sourcepath="/core"/>
+	<classpathentry kind="lib" path="/home/andres/Devel/Eclipse/workspace/libs/console.jar"/>
+	<classpathentry kind="lib" path="/home/andres/Devel/Eclipse/workspace/libs/consoleCallBacks.jar"/>
+	<classpathentry kind="lib" path="/home/andres/Devel/Eclipse/workspace/libs/Ice.jar"/>
+	<classpathentry kind="lib" path="/home/andres/Devel/Eclipse/workspace/libs/rebecca-network.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
