@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <comment>ChatterBean default configuration properties</comment>
+  <entry key="context">context.xml</entry>
+  <entry key="splitters">splitters.xml</entry>
+  <entry key="substitutions">substitutions.xml</entry>
+  <entry key="categories">Alice/</entry>
+  <entry key="logs">../Logs/</entry>
+</properties>

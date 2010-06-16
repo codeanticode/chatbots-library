@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+  <topic name="LIKE">
+    <category>
+      <pattern>YES</pattern>
+      <that>DO YOU LIKE CHEESE</that>
+      <template>Good for you.<think><set name="topic">*</set></think></template>
+    </category>
+  </topic>
+  <category>
+    <pattern>WHAT DO YOU WANT TO KNOW</pattern>
+    <template>Do you <set name="topic">like</set> cheese?</template>
+  </category>
+  <category>
+    <pattern>YES</pattern>
+    <template>"Yes" what?</template>
+  </category>
+  <category>
+    <pattern>YES</pattern>
+    <that>DO YOU LIKE CAKE</that>
+    <template>I couldn't care less.</template>
+  </category>
+</aiml>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+  <category>
+    <pattern>_ ALICE</pattern>
+    <template><sr/></template>
+  </category>
+  <category>
+    <pattern>_ AGAIN</pattern>
+    <template>Once more? <sr/></template>
+  </category>
+  <category>
+    <pattern>YOU MAY *</pattern>
+    <template><sr/></template>
+  </category>
+  <category>
+    <pattern>SAY *</pattern>
+    <template>&quot;<star/>&quot;.</template>
+  </category>
+</aiml>

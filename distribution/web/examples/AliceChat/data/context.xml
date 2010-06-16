@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<context>
+  <!-- The id is a unique string that identifies this context. -->
+  <bot name="id" value="test_cases"/>
+
+  <!-- Bot predicates are set at load time, and cannot be changed at runtime. -->
+  <bot name="output" value="Logs/gossip.txt"/>
+  <bot name="randomSeed" value="1"/>
+  <bot name="series" value="Alpha"/>
+  <bot name="version" value="0.7.5 Alpha"/>
+
+  <!-- Default values for predicates, can be changed later at runtime. -->
+  <set name="dateFormat" value="yyyy-MM-dd HH:mm:ss"/>
+  <set name="name" value="Unknown Person"/>
+  <set name="me" value="Alice"/>
+  <set name="engine" value="ChatterBean"/>
+  <set name="topic" value="*"/>
+</context>

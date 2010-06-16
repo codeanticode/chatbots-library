@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+  <category>
+    <pattern>DO THE RANDOM EXAMPLE</pattern>
+    <template>
+      <random>
+        <li>This is the first random example.</li>
+        <li>This is the second random example.</li>
+        <li>This is the third random example.</li>
+      </random>
+    </template>
+  </category>
+</aiml>

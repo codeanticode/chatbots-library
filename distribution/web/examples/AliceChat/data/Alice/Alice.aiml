@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+  <category>
+    <pattern>WHO ARE YOU</pattern>
+    <template>I am Alice, nice to meet you!</template>
+  </category>
+  <category>
+    <pattern>WHAT DID I JUST SAY</pattern>
+    <template>You said "<input index="2"/>".</template>
+  </category>
+  <category>
+    <pattern>WHAT SERIES YOUR ENGINE IS</pattern>
+    <template>My engine is an <bot name="series"/> series ChatterBean engine.</template>
+  </category>
+  <category>
+    <pattern>WHAT TIME IS NOW</pattern>
+    <template>Now is <date/>.</template>
+  </category>
+  <category>
+    <pattern>WHAT SIZE ARE YOU</pattern>
+    <template>I currently contain <size/> categories.</template>
+  </category>
+  <category>
+    <pattern>WHAT DID YOU JUST SAY</pattern>
+    <template>I said "<that/>".</template>
+  </category>
+  <category>
+    <pattern>IF YOU ARE * THEN I AM _</pattern>
+    <template>What makes you think that if I am <star index="1"/> then you are <star index="2"/>?</template>
+  </category>
+  <category>
+    <pattern>DO YOU SEE THE *</pattern>
+    <template>Yes, I see the <star/>.</template>
+  </category>
+  <category>
+    <pattern>DO YOU SEE THE * IN MY EYES</pattern>
+    <template>Yes, I see the <star/> in your eyes.</template>
+  </category>
+  <category>
+    <pattern>HI YA</pattern>
+    <template><srai>HELLO</srai></template>
+  </category>
+  <category>
+    <pattern>HELLO</pattern>
+    <template>
+      Hello <get name="name"/>!
+      My name is Alice, who are you?
+    </template>
+  </category>
+  <category>
+    <pattern>GREETINGS FROM *</pattern>
+    <template><srai>GREETING <star/></srai></template>
+  </category>
+  <category>
+    <pattern>MY NAME IS *</pattern>
+    <template><srai>GREETING <star/></srai></template>
+  </category>
+  <category>
+    <pattern>NAME IS *</pattern>
+    <template>'kay. <srai>GREETING <star/></srai> What's up?</template>
+  </category>
+  <category>
+    <pattern>I AM *</pattern>
+    <template><srai>GREETING <star/></srai></template>
+  </category>
+  <category>
+    <pattern>I AM CALLED *</pattern>
+    <template><srai>GREETING <star/></srai></template>
+  </category>
+  <category>
+    <pattern>GREETING *</pattern>
+    <template>
+      Nice to meet you, <set name="name"><star/></set>. :-)
+      <gossip><get name="name"/> logged in.</gossip>
+    </template>
+  </category>
+  <category>
+    <pattern>NICE TO MEET YOU TOO</pattern>
+    <template>Thank you, <get name="name"/>.</template>
+  </category>
+  <category>
+    <pattern>WHAT IS *</pattern>
+    <template>Sorry, I don't know what <star/> is.</template>
+  </category>
+  <category>
+    <pattern>_ BOT</pattern>
+    <template>Yes, I am an ALICE Bot.</template>
+  </category>
+  <category>
+    <pattern>_ NAME</pattern>
+    <template>My name is Alice, nice to meet you!</template>
+  </category>
+  <category>
+    <pattern>TELL ME ABOUT *</pattern>
+    <template><sr/></template>
+  </category>
+  <category>
+    <pattern>PRINT THIS *</pattern>
+    <template><system>result = "<star/>";</system></template>
+  </category>
+  <category>
+    <pattern>*</pattern>
+    <template>I am sorry, my answers are limited -- you must provide the right questions.</template>
+  </category>
+</aiml>

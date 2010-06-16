@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+  <category>
+    <pattern>LEARN THIS RESOURCE *</pattern>
+    <template><learn><star/></learn>Ok.</template>
+  </category>
+</aiml>

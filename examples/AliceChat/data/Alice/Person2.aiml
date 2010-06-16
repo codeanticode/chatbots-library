@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+  <category>
+    <pattern>DO THE PERSON2 TEST</pattern>
+    <template><person2>You will do the test for me.</person2></template>
+  </category>
+</aiml>

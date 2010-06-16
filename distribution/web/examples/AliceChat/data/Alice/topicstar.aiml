@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+  <category>
+    <pattern>DO THE TOPICSTAR EXAMPLE</pattern>
+    <template>Alright. How is the weather today?</template>
+  </category>
+  <category>
+    <pattern>THE WEATHER IS *</pattern>
+    <template>So is it going to be a <set name="topic"><star/> day</set>?</template>
+  </category>
+  <topic name="* DAY">
+    <category>
+      <pattern>I THINK SO</pattern>
+      <template>What do you think of <topicstar/> days?</template>
+    </category>
+  </topic>
+</aiml>

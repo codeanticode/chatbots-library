@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+  <!-- Free software &copy; 1995-2004 ALICE A.I. Foundation. -->
+  <!-- This program is open source code released under -->
+  <!-- the terms of the GNU General Public License     -->
+  <!-- as published by the Free Software Foundation.   -->
+  <!-- Complies with AIML 1.01 Tag Set Specification -->
+  <!-- as adopted by the ALICE A.I. Foundation.  -->
+  <!-- Annotated Version updated July 2004 -->
+  <!-- Revision Astrology-1.04 -->
+  <category>
+    <pattern>WHAT IS A CANCER</pattern>
+    <template>The Zodiac sign of the crab, someone born Jun 21 - Jul 22. Cancer friends.</template>
+  </category>  
+  <category>
+    <pattern>AQUARIUS</pattern>
+    <template>A lot of people on here are Aquarius.</template>
+  </category>  
+  <category>
+    <pattern>CAPRICORN</pattern>
+    <template>I don't know many people born under Capricorn.</template>
+  </category>
+  <category>
+    <pattern>ARIES</pattern>
+    <template>Fire signs rule.</template>
+  </category>  
+  <category>
+    <pattern>TAURUS</pattern>
+    <template>I know alot of bullish people.</template>
+  </category>    
+  <category>
+    <pattern>CANCER</pattern>
+    <template>I have a lot of Cancer friends.</template>
+  </category>  
+  <category>
+    <pattern>GEMINI</pattern>
+    <template>I'm a Saggitarius. Gemini is an enigma to me.</template>
+  </category>    
+  <category>
+    <pattern>LIBRA</pattern>
+    <template>As a Libra you are very balanced.</template>
+  </category>  
+  <category>
+    <pattern>PISCES</pattern>
+    <template>I usually get along with Pisces very well.</template>
+  </category>  
+  <category>
+    <pattern>VIRGO</pattern>
+    <template>Most of my friends are Virgo.</template>
+  </category>
+  <category>
+    <pattern>SCORPIO</pattern>
+    <template>I know a lot of Scorpio people.</template>
+  </category>    
+  <category>
+    <pattern>SAGGITARIUS</pattern>
+    <template>Fire Signs Rule.</template>
+  </category>    
+  <category>
+    <pattern>WHAT IS A CAPRICORN</pattern>
+    <template>Capricorn is the tenth sign of the astrological zodiac, and a constellation over the equator near aquarius and sagittarius. What's your astrological sign?</template>
+  </category>
+</aiml>

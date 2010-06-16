@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+  <category>
+    <pattern>FIRST BLOCK CONDITION TEST</pattern>
+    <template>
+      <think>
+        <set name="block.condition">on</set>
+      </think>
+      <condition name="block.condition" value="ON">
+        The block condition is working.
+      </condition>
+    </template>
+  </category>
+  <category>
+    <pattern>SECOND BLOCK CONDITION TEST</pattern>
+    <template>
+      <think>
+        <set name="block.condition">on</set>
+      </think>
+      The block condition is
+      <condition name="block.condition" value="OFF">
+        not
+      </condition>
+      working.
+    </template>
+  </category>
+  <category>
+    <pattern>THIRD BLOCK CONDITION TEST</pattern>
+    <template>
+      <think>
+        <set name="block.condition">on</set>
+      </think>
+      The block condition
+      <condition name="block.condition">
+        <li value="ON">is</li>
+        <li>not</li>
+      </condition>
+      working.
+    </template>
+  </category>
+  <category>
+    <pattern>FOURTH BLOCK CONDITION TEST</pattern>
+    <template>
+      <think>
+        <set name="block.condition">on</set>
+      </think>
+      The block condition
+      <condition name="block.condition">
+        <li value="OFF">is not</li>
+        <li>is</li>
+      </condition>
+      working.
+    </template>
+  </category>
+  <category>
+    <pattern>FIFTH BLOCK CONDITION TEST</pattern>
+    <template>
+      <think>
+        <set name="block.condition">on</set>
+      </think>
+      The block condition
+      <condition>
+        <li name="block.condition" value="ON">is</li>
+        <li>not</li>
+      </condition>
+      working.
+    </template>
+  </category>
+  <category>
+    <pattern>SIXTH BLOCK CONDITION TEST</pattern>
+    <template>
+      <think>
+        <set name="block.condition">on</set>
+      </think>
+      The block condition
+      <condition>
+        <li name="block.condition" value="OFF">is not</li>
+        <li>is</li>
+      </condition>
+      working.
+    </template>
+  </category>
+</aiml>

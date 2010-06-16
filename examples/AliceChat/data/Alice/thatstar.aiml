@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+  <category>
+    <pattern>DO THE THATSTAR EXAMPLE</pattern>
+    <template>Ok. It'll be a bit silly, though.</template>
+  </category>
+  <category>
+    <pattern>WHY SO</pattern>
+    <that>IT WILL BE * THOUGH</that>
+    <template>This kind of arranged dialogue is always <thatstar/>.</template>
+  </category>
+</aiml>

@@ -11,11 +11,11 @@ Intructions to modify the script file are available here:
 http://www.chayden.net/eliza/instructions.txt
 */
 
-import codeanticode.chatbots.rebecca.*;
+import codeanticode.chatbots.alice.*;
 
-Rebecca alice;
+Alice alice;
 PFont font;
-String elizaResponse, humanResponse;
+String aliceResponse, humanResponse;
 boolean showCursor;
 int lastTime;
 
@@ -23,17 +23,10 @@ void setup()
 {
     size(400, 400);
 
-    // When Eliza is initialized, a default script built into the
+    // When Alice is initialized, a default script built into the
     // library is loaded.
-    alice = new Rebecca(this, "alice");
+    alice = new Alice(this);
   
-    // A new script can be loaded through the readScript function.
-    // It can take local as well as remote files. 
-    //eliza.readScript("script");
-    //eliza.readScript("http://chayden.net/eliza/script");
-  
-    // To go back to the default script, use this:
-    //eliza.readDefaultScript();
   
     font = loadFont("Rockwell-24.vlw");
     textFont(font);
@@ -49,7 +42,7 @@ void draw()
     background(102);
 
     fill(255);
-    text(elizaResponse, 10, 50, width - 40, height);
+    text(aliceResponse, 10, 50, width - 40, height);
 
     fill(0);
 
@@ -69,8 +62,8 @@ void keyPressed()
     if ((key == ENTER) || (key == RETURN)) 
     {
         println(humanResponse);
-        elizaResponse = alice.processInput(humanResponse);
-        println(">> " + elizaResponse);
+        aliceResponse = alice.processInput(humanResponse);
+        println(">> " + aliceResponse);
         humanResponse = "";
     } 
     else if ((key > 31) && (key != CODED)) 
@@ -87,6 +80,7 @@ void keyPressed()
 
 void printAliceIntro()
 {
-    elizaResponse = alice.initialResponse;
-    println(">> " + elizaResponse);
+    String hello = "Hello.";
+    aliceResponse = hello + " " + alice.processInput(hello);
+    println(">> " + aliceResponse);
 }

@@ -1,3 +1,9 @@
-codeanticode.chatbots.bob
+codeanticode.chatbots.alice
+codeanticode.chatbots.alice.aiml
+codeanticode.chatbots.alice.config
+codeanticode.chatbots.alice.parser
+codeanticode.chatbots.alice.script
+codeanticode.chatbots.alice.text
+codeanticode.chatbots.alice.util
 codeanticode.chatbots.eliza
 codeanticode.chatbots.rebecca

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+  <category>
+    <pattern>HELLO</pattern>
+    <template>Hello! My name is Alice, who are you?</template>
+  </category>
+  <category>
+    <pattern>MY NAME IS *</pattern>
+    <template><srai>GREETING <star/></srai></template>
+  </category>
+  <category>
+    <pattern>NAME IS *</pattern>
+    <template><srai>GREETING <star/></srai></template>
+  </category>
+  <category>
+    <pattern>I AM *</pattern>
+    <template><srai>GREETING <star/></srai></template>
+  </category>
+  <category>
+    <pattern>GREETING *</pattern>
+    <template>Nice to meet you, <star/>. :-)</template>
+  </category>
+  <category>
+    <pattern>WHAT IS *</pattern>
+    <template>Sorry, I don't know what <star/> is.</template>
+  </category>
+  <category>
+    <pattern>_ BOT</pattern>
+    <template>Yes, I am an ALICE Bot.</template>
+  </category>
+  <category>
+    <pattern>_ NAME</pattern>
+    <template>My name is Alice, nice to meet you!</template>
+  </category>
+  <category>
+    <pattern>TELL ME ABOUT *</pattern>
+    <template><sr/></template>
+  </category>
+  <category>
+    <pattern>*</pattern>
+    <template>I am sorry, my answers are limited -- you must provide the right questions.</template>
+  </category>
+</aiml>

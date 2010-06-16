@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+  <!--
+    Example for testing the wildcard-matching behaviour against empty srings. The expected result is that the first category get matched, but the recursive step returns only the empty string.
+  -->
+  <category>
+    <pattern>THANK YOU *</pattern>
+    <template>Why, you're welcome! <sr/></template>
+  </category>
+  <category>
+    <pattern>I AM HAPPY * IS *</pattern>
+    <template>Yes, I am happy for <star index="1"/> being <star index="2"/> as well.</template>
+  </category>
+</aiml>
