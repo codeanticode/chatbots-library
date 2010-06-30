@@ -21,6 +21,9 @@ import javax.xml.parsers.SAXParserFactory;
 import codeanticode.chatbots.alice.Graphmaster;
 import codeanticode.chatbots.alice.util.Searcher;
 
+import java.lang.System;
+
+
 public class AIMLParser
 {
   /*
@@ -55,8 +58,11 @@ public class AIMLParser
   {
     try
     {
-      for (InputStream aiml : sources)
+      for (InputStream aiml : sources){
+        System.out.println("PASRING AIML: " + aiml);
         parser.parse(aiml, handler);
+        System.out.println("PASRING AIML: Done");
+      }
 
       graphmaster.append(handler.unload());
     }

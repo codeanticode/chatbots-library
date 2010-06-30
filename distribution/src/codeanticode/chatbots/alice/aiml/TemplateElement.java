@@ -81,8 +81,13 @@ public class TemplateElement implements AIMLElement
   public String process(Match match)
   {
     StringBuilder value = new StringBuilder();
-    for (TemplateElement i : children)
-      value.append(i.process(match));
+    for (TemplateElement i : children) 
+    {
+      String s = i.process(match);
+      value.append(s);  
+    }
+      
+      
     
     return value.toString();
   }

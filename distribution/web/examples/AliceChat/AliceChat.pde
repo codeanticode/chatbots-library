@@ -12,7 +12,9 @@ http://www.chayden.net/eliza/instructions.txt
 */
 
 import codeanticode.chatbots.alice.*;
+import codeanticode.chatbots.eliza.*;
 
+Eliza eliza;
 Alice alice;
 PFont font;
 String aliceResponse, humanResponse;
@@ -25,7 +27,8 @@ void setup()
 
     // When Alice is initialized, a default script built into the
     // library is loaded.
-    alice = new Alice(this);
+    alice = new Alice(this, "");
+    eliza = new Eliza(this);
   
   
     font = loadFont("Rockwell-24.vlw");
@@ -64,6 +67,7 @@ void keyPressed()
         println(humanResponse);
         aliceResponse = alice.processInput(humanResponse);
         println(">> " + aliceResponse);
+        //humanResponse = eliza.processInput(aliceResponse);        
         humanResponse = "";
     } 
     else if ((key > 31) && (key != CODED)) 
@@ -83,4 +87,5 @@ void printAliceIntro()
     String hello = "Hello.";
     aliceResponse = hello + " " + alice.processInput(hello);
     println(">> " + aliceResponse);
+    //humanResponse = eliza.processInput(aliceResponse);
 }
